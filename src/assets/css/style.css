@@ -351,12 +351,12 @@ section.our_team {
   align-items: flex-start;
 }
 
-.up-content {
+.why-us .up-content {
   display: flex;
   margin-bottom: 20px;
 }
 
-.up-content h2,
+.why-us .up-content h2,
 p {
   display: flex;
   flex-direction: column;
@@ -389,7 +389,7 @@ p {
   );
 }
 
-.down-content {
+.why-us .down-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -398,7 +398,7 @@ p {
   gap: 20px;
 }
 
-.down-content__border {
+.why-us .down-content__border {
   position: relative;
   padding: 30px;
   text-align: center;
@@ -421,10 +421,11 @@ p {
 
 .why-description {
   background: linear-gradient(
-    90deg,
-    #c0c0c0 -0.07%,
-    rgba(192, 192, 192, 0) 141.43%
+    178.15deg,
+    #c0c0c0 1.56%,
+    rgba(192, 192, 192, 0) 141.86%
   );
+
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -435,18 +436,18 @@ p {
   margin-top: 10px;
 }
 
-.down-content__border img {
+.why-us .down-content__border img {
   margin-bottom: 35px;
 }
 
-.down-content__border h3 {
+.why-us .down-content__border h3 {
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
 }
 
-.down-content__border p {
+.why-us .down-content__border p {
   background: linear-gradient(
     90deg,
     #c0c0c0 -0.07%,
@@ -459,4 +460,246 @@ p {
   font-weight: 500;
   font-family: "Heebo", sans-serif;
   line-height: 1.2;
+}
+
+/* SECTION OUR-RATES */
+
+.rates__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.our-rates .up-content {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.our-rates .up-content h2,
+p {
+  display: flex;
+  flex-direction: column;
+}
+
+.rates-title {
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 80px;
+  line-height: 58.59px;
+}
+
+.rates-title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 90px;
+  height: 3px;
+  background: linear-gradient(
+    270deg,
+    #b0772a 0%,
+    #deb864 16%,
+    #f4d780 25%,
+    #f4d780 46%,
+    #fbf9d8 65%,
+    #f4d780 75%,
+    #b0772a 100%
+  );
+}
+
+.rates-description {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 147.79%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Heebo", sans-serif;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.rates__inner-bg {
+  background-image: url("../image/our_rates/bg-rates.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 420px;
+  height: 716px;
+  padding: 40px 32px 50px;
+  border-radius: 10px;
+}
+
+.our-rates .down-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.rates__level {
+  margin-bottom: 65px;
+}
+
+.rates__level h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52.73px;
+  margin-bottom: 20px;
+}
+
+.rates__level span {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 52.73px;
+}
+
+.level-one > span,
+.level-one > h2 {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 107, 0, 0.2),
+      rgba(255, 107, 0, 0.32)
+    ),
+    linear-gradient(
+      143.15deg,
+      rgba(255, 255, 255, 0.2) 100%,
+      rgba(255, 255, 255, 0) 57.02%
+    );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.level-two > h2,
+.level-two > span {
+  background: linear-gradient(
+    38.59deg,
+    #576265 -70.06%,
+    #b3b3b3 -26.87%,
+    #848a8b -3.74%,
+    #777e80 -0.65%,
+    #656e71 7.06%,
+    #5a6568 14.77%,
+    #576265 22.49%,
+    #818586 44.08%,
+    #999999 57.96%,
+    #909192 64.13%,
+    #767c7d 73.39%,
+    #576265 82.64%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.level-three > h2,
+.level-three > span {
+  background: linear-gradient(
+    259.94deg,
+    #b0772a 1.53%,
+    #deb864 16.83%,
+    #f4d780 25.43%,
+    #f4d780 45.5%,
+    #fbf9d8 63.66%,
+    #f4d780 73.22%,
+    #b0772a 97.12%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.rates__info p {
+  font-family: "Heebo", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #d1d1d1;
+  margin-bottom: 25px;
+}
+
+.rates__info p + p {
+  margin-bottom: 25px;
+}
+
+.inner-one button {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 107, 0, 0.32),
+      rgba(255, 107, 0, 0.32)
+    ),
+    linear-gradient(
+      143.15deg,
+      rgba(255, 255, 255, 0.2) 100%,
+      rgba(255, 255, 255, 0) 57.02%
+    );
+}
+
+.inner-two button {
+  background: linear-gradient(
+    38.59deg,
+    #576265 -70.06%,
+    #b3b3b3 -26.87%,
+    #848a8b -3.74%,
+    #777e80 -0.65%,
+    #656e71 7.06%,
+    #5a6568 14.77%,
+    #576265 22.49%,
+    #818586 44.08%,
+    #999999 57.96%,
+    #909192 64.13%,
+    #767c7d 73.39%,
+    #576265 82.64%
+  );
+}
+
+.inner-one button,
+.inner-two button {
+  margin-top: 80px;
+}
+
+.inner-three button {
+  margin-top: 55px;
+  color: black !important;
+  background: linear-gradient(
+    12.08deg,
+    #f6e188 -22.89%,
+    #a56a28 8.61%,
+    #e2ac54 28.77%,
+    #f2da82 52.71%,
+    #bb772c 75.39%,
+    #eda948 103.11%
+  );
+}
+
+.rates__inner-bg button {
+  border: none;
+  width: 310px;
+  height: 60px;
+  border-radius: 20px;
+  text-transform: uppercase;
+
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
 }

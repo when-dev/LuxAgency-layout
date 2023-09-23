@@ -245,6 +245,72 @@ function App() {
           </div>
         </div>
       </section>
+
+      <section className="our-rates">
+        <div className="container rates__container">
+          <div className="up-content">
+            <h2 className="rates-title">
+              Наши <br /> тарифы
+            </h2>
+            <p className="rates-description">
+              Преобразите свою повседневную среду с помощью этих трех различных{" "}
+              <br />
+              тарифов, предлагаемых по доступной цене. Каждый ценовой пакет
+              может <br />
+              быть настроен в соответствии с вашими пожеланиями.
+            </p>
+          </div>
+        </div>
+        <div className="container">
+          <div className="down-content">
+            <div className="rates__inner-bg inner-one">
+              <div className="rates__level level-one">
+                <h2>стандарт</h2>
+                <span>2.75%</span>
+              </div>
+              <div className="rates__info">
+                <p>Экспертиза стоимости объекта</p>
+                <p>Анализ рынка</p>
+                <p>Предпродажная подготовка</p>
+                <p>Проведение показов и переговоры с покупателями</p>
+                <p>Комплексное юридическое сопровождение</p>
+              </div>
+
+              <button>Выбрать</button>
+            </div>
+            <div className="rates__inner-bg inner-two">
+              <div className="rates__level level-two">
+                <h2>максимум</h2>
+                <span>2.95%</span>
+              </div>
+              <div className="rates__info">
+                <p>Аванс в день обращения</p>
+                <p>Комплексное управление</p>
+                <p>Страхование ответственности</p>
+                <p>Проведение показов и переговоры с покупателями</p>
+                <p>Комплексное юридическое сопровождение</p>
+              </div>
+
+              <button>Выбрать</button>
+            </div>
+            <div className="rates__inner-bg inner-three">
+              <div className="rates__level level-three">
+                <h2>премиум</h2>
+                <span>от 5.15%</span>
+              </div>
+              <div className="rates__info">
+                <p>Выкуп по стоимости 85-90% от рынка</p>
+                <p>Выход на сделку в течение 3-х дней</p>
+                <p>Отсутствие рисков</p>
+                <p>Проведение показов и переговоры с покупателями</p>
+                <p>Комплексное юридическое сопровождение</p>
+              </div>
+
+              <button>Выбрать</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
