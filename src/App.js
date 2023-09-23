@@ -1,4 +1,5 @@
 import {
+  // OUR_TEAM IMAGES
   maxWiwi,
   wellSofi,
   ruslan,
@@ -11,9 +12,18 @@ import {
   vladik,
   andrusha,
   platina,
+
+  // WHY-US IMAGES
+  aboutFirstIcon,
+  aboutSecondIcon,
+  aboutThirdIcon,
+  aboutFourthIcon,
+  aboutFifthIcon,
+  aboutSixIcon,
 } from "./assets/image/index.js";
+
 import thinkingMan from "./assets/image/about/thinking-man.png";
-import bgSquare from './assets/image/icons/bg-border-square.png';
+import bgSquare from "./assets/image/icons/bg-border-square.png";
 import logo from "./assets/image/logo.svg";
 import callbtn from "./assets/image/call.svg";
 import "./assets/css/style.css";
@@ -161,6 +171,77 @@ function App() {
           </div>
           <div className="border-square">
             <img src={bgSquare} alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section className="why-us">
+        <div className="container why-us__container">
+          <div className="up-content">
+            <h2 className="why-title">Почему мы?</h2>
+            <p className="why-description">
+              Откройте для себя преимущества, которые делают наше <br />
+              агентство недвижимости непревзойденным выбором для вашей <br />
+              недвижимостной потребности
+            </p>
+          </div>
+          <div className="container">
+            <div className="down-content">
+              <div className="down-content__border">
+                <img src={aboutFirstIcon} alt="firstIcon" />
+                <h3>Профессионализм</h3>
+                <p>
+                  Наши опытные агенты предоставляют <br />
+                  высококачественные услуги с учетом <br />
+                  ваших потребностей
+                </p>
+              </div>
+              <div className="down-content__border ">
+                <img src={aboutSecondIcon} alt="secondIcon" />
+                <h3>Широкий выбор недвижимости</h3>
+                <p>
+                  Мы предлагаем разнообразные <br />
+                  объекты недвижимости, подходящие <br />
+                  для различных целей — от жилья до <br />
+                  коммерческой недвижимости
+                </p>
+              </div>
+              <div className="down-content__border ">
+                <img src={aboutThirdIcon} alt="thirdIcon" />
+                <h3>Персональный подход</h3>
+                <p>
+                  Мы уделяем внимание каждому клиенту <br />
+                  и разрабатываем индивидуальные <br />
+                  стратегии
+                </p>
+              </div>
+              <div className="down-content__border">
+                <img src={aboutFourthIcon} alt="fourthIcon" />
+                <h3>Прозрачность и доверие</h3>
+                <p>
+                  Мы ценим долгосрочные отношения и <br />
+                  строим свою работу на основе <br />
+                  честности и открытости
+                </p>
+              </div>
+              <div className="down-content__border">
+                <img src={aboutFifthIcon} alt="fifthIcon" />
+                <h3>Экспертные консультации</h3>
+                <p>
+                  Мы предоставляем профессиональные <br />
+                  советы по недвижимости и <br />
+                  инвестициям
+                </p>
+              </div>
+              <div className="down-content__border">
+                <img src={aboutSixIcon} alt="sixIcon" />
+                <h3>Отличная репутация</h3>
+                <p>
+                  Наше агентство недвижимости славится <br />
+                  надежностью и успешными сделками
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
