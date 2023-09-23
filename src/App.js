@@ -315,6 +315,10 @@ function App() {
       </section>
 
       <section className="profitability-calc">
+        <div className="pattern-small__rect-first"></div>
+        <div className="pattern-normal__rect"></div>
+        <div className="pattern-small__rect-second"></div>
+
         <div className="container calc__container">
           <div className="calc-up__content">
             <h2 className="calc-title">

@@ -7,6 +7,7 @@
 }
 
 .App {
+  position: relative;
   min-height: 100vh;
   background: #090909;
 }
@@ -765,7 +766,40 @@ p {
   margin-left: 100px;
   margin-top: 60px;
 }
-
 .profitability-calc {
   position: relative;
+}
+
+.pattern-small__rect-first {
+  position: absolute;
+  top: -160px;
+  bottom: 0;
+  left:0;
+  right: 0;
+
+  background-image: url('../image/icons/bg-react-small.png');
+  background-repeat: no-repeat;
+}
+
+
+.pattern-normal__rect {
+  position: absolute;
+  top: -20px;
+  bottom: 0;
+  left: -10px;
+  right: 0px;
+
+  background-image: url('../image/icons/bg-rect.png');
+  background-repeat: no-repeat;
+}
+
+.pattern-small__rect-second {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left:0;
+  right: 0;
+
+  background-image: url('../image/icons/bg-react-small.png');
+  background-repeat: no-repeat;
 }
