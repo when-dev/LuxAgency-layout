@@ -102,3 +102,67 @@ nav.header__nav ul li a {
     background: linear-gradient(20.79deg, #F6E188 -22.06%, #A56A28 15.96%, #E2AC54 40.29%, #F2DA82 69.17%, #BB772C 96.54%, #EDA948 130%);
 }
 
+
+/* SECTION OUR_TEAM */
+
+section.our_team {
+  margin-top: 100px;
+}
+
+.team__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.team-title {
+  text-transform: uppercase;
+  font-size: 50px;
+  position: relative;
+  margin-right: 100px;
+}
+
+.team-title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 90px;
+  height: 3px;
+  background: linear-gradient(270deg, #B0772A 0%, #DEB864 16%, #F4D780 25%, #F4D780 46%, #FBF9D8 65%, #F4D780 75%, #B0772A 100%);
+}
+
+.team-description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #C0C0C0;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.team-member {
+  flex-basis: calc(25% - 20px); 
+  text-align: center;
+}
+
+.team-member img {
+  max-width: 310px;
+}
+
+.team-member-name {
+  font-size: 40px;
+  font-weight: 700;
+  background: linear-gradient(259.94deg, #B0772A 1.53%, #DEB864 16.83%, #F4D780 25.43%, #F4D780 45.5%, #FBF9D8 63.66%, #F4D780 73.22%, #B0772A 97.12%);
+  padding: 10px;
+  margin-bottom: 40px;
+  -webkit-background-clip: text; /* Для кроссбраузерности */
+  background-clip: text;
+  color: transparent; /* Сделает текст невидимым, так как цвет текста сейчас установлен через фон */
+}
