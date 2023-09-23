@@ -416,7 +416,7 @@ p {
     #f4d780 75%,
     #b0772a 100%
   );
-  box-shadow: inset 0px 0px 0px 100vw black;
+  box-shadow: inset 0px 0px 0px 100vw #090909;
   border-radius: 10px;
 }
 
@@ -839,7 +839,7 @@ p {
 }
 
 .services-description {
-  color: #C0C0C0;
+  color: #c0c0c0;
 
   font-size: 20px;
   font-weight: 400;
@@ -848,3 +848,145 @@ p {
   margin-top: 10px;
 }
 
+/* SECTION OUR-REVIEWS */
+
+.reviews__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.our-reviews {
+  margin-top: 110px;
+}
+
+.our-reviews .up-content {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.our-reviews .up-content h2,
+p {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-title {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 80px;
+  margin-left: 110px;
+}
+
+.reviews-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 90px;
+  height: 3px;
+  background: linear-gradient(
+    270deg,
+    #b0772a 0%,
+    #deb864 16%,
+    #f4d780 25%,
+    #f4d780 46%,
+    #fbf9d8 65%,
+    #f4d780 75%,
+    #b0772a 100%
+  );
+}
+
+.our-reviews .down-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  gap: 20px;
+}
+
+.our-reviews .down-content__border {
+  position: relative;
+  padding: 30px;
+  text-align: center;
+  width: 420px;
+  height: 489px;
+  border: 1px solid transparent;
+  background: linear-gradient(
+    270deg,
+    #b0772a 0%,
+    #deb864 16%,
+    #f4d780 25%,
+    #f4d780 46%,
+    #fbf9d8 65%,
+    #f4d780 75%,
+    #b0772a 100%
+  );
+  box-shadow: inset 0px 0px 0px 100vw #090909;
+  border-radius: 33px;
+}
+
+.reviews-description {
+  background: linear-gradient(
+    178.15deg,
+    #c0c0c0 1.56%,
+    rgba(192, 192, 192, 0) 141.86%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-left: 130px;
+  margin-top: 20px;
+}
+
+.our-reviews .down-content__border img {
+  margin-bottom: 35px;
+}
+
+.our-reviews .down-content__border h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.our-reviews .down-content__border p {
+  color: #868686;
+
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Heebo", sans-serif;
+  line-height: 1.3;
+}
+
+.stars {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.our-reviews .down-content__border {
+  position: relative;
+}
+
+.our-reviews .down-content__border::before {
+  content: '';
+  position: absolute;
+  top: 150px;
+  right: 0;
+  left: 230px;
+  bottom: 0;
+
+  background-image: url('../image/icons/reviews-icon.png');
+  background-repeat: no-repeat;
+}

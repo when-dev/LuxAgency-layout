@@ -27,6 +27,10 @@ import firstServicesPic from './our_services/picture-1.png';
 import secondServicesPic from './our_services/picture-2.png';
 import thirdServicesPic from './our_services/picture-3.png';
 
+// IMPORT OUR-REVIEWS IMAGES
+import firstPic from './our-reviews/pic-1.png'; 
+import secondPic from './our-reviews/pic-2.png'; 
+import thirdPic from './our-reviews/pic-3.png'; 
 
 // EXPORT OUR_TEAM IMAGES
 export {
@@ -61,4 +65,11 @@ export {
   firstServicesPic,
   secondServicesPic,
   thirdServicesPic,
+}
+
+// EXPORT OUR-REVIEWS IMAGES
+export {
+  firstPic,
+  secondPic,
+  thirdPic
 }

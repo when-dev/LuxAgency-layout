@@ -29,7 +29,13 @@ import {
   // firstServicesPic,
   // secondServicesPic,
   // thirdServicesPic,
+
+  // OUR-REVIEWS IMAGES
+  firstPic,
+  secondPic,
+  thirdPic,
 } from "./assets/image/index.js";
+import stars from "./assets/image/icons/star.png";
 import rectSmall from "./assets/image/icons/bg-react-small.png";
 import rectNormal from "./assets/image/icons/bg-rect.png";
 import thinkingMan from "./assets/image/about/thinking-man.png";
@@ -372,6 +378,78 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* skip button-to-call and our-project  */}
+
+      <section className="our-reviews">
+        <div className="container reviews__container">
+          <div className="up-content">
+            <h2 className="reviews-title">ОТЗЫВЫ</h2>
+            <p className="reviews-description">
+              Узнайте, что говорят о нас те, кто уже сделал выбор в пользу наших
+              услуг
+            </p>
+          </div>
+          <div className="container">
+            <div className="down-content">
+              <div className="down-content__border">
+                <img src={firstPic} alt="firstPic" />
+                <p>
+                  Сотрудничество с агентством недвижимости было <br />
+                  удивительным опытом! Их команда помогла мне <br />
+                  найти мою мечтательную квартиру, и сделала все, <br />
+                  чтобы сделка прошла гладко. Профессионализм и <br />
+                  забота о клиентах на высшем уровне.
+                </p>
+                <div className="stars">
+                  <img src={stars} alt="star" />
+                  <img src={stars} alt="star" />
+                  <img src={stars} alt="star" />
+                  <img src={stars} alt="star" />
+                  <img src={stars} alt="star" />
+                </div>
+                <h3>Владимир</h3>
+              </div>
+              <div className="down-content__border">
+                <img src={secondPic} alt="secondPic" />
+                <p>
+                  Я долго искала агентство недвижимости, которое <br />
+                  могло бы продать мой дом быстро и по выгодной <br />
+                  цене. С агентством, которое я выбрала, моя <br />
+                  недвижимость была продана всего за несколько <br />
+                  недель! Очень довольна результатом.
+                </p>
+                <div className="stars">
+                  <img src={stars} alt="star" />
+                  <img src={stars} alt="star" />
+                  <img src={stars} alt="star" />
+                  <img src={stars} alt="star" />
+                  <img src={stars} alt="star" />
+                </div>
+                <h3>Екатерина</h3>
+              </div>
+              <div className="down-content__border">
+                <img src={thirdPic} alt="thirdPic" />
+                <p>
+                  Сотрудничество с агентством недвижимости было <br />
+                  удивительным опытом! Их команда помогла мне <br />
+                  найти мою мечтательную квартиру, и сделала все, <br />
+                  чтобы сделка прошла гладко. Профессионализм и <br />
+                  забота о клиентах на высшем уровне.
+                </p>
+                <div className="stars">
+                  <img src={stars} alt="star" />
+                  <img src={stars} alt="star" />
+                  <img src={stars} alt="star" />
+                  <img src={stars} alt="star" />
+                  <img src={stars} alt="star" />
+                </div>
+                <h3>Антон</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
