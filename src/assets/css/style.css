@@ -470,6 +470,11 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  z-index: 100;
+}
+
+.our-rates {
+  position: relative;
 }
 
 .our-rates .up-content {
@@ -766,40 +771,25 @@ p {
   margin-left: 100px;
   margin-top: 60px;
 }
+
 .profitability-calc {
   position: relative;
 }
 
-.pattern-small__rect-first {
+.rect-patterns img{
   position: absolute;
-  top: -160px;
-  bottom: 0;
-  left:0;
-  right: 0;
-
-  background-image: url('../image/icons/bg-react-small.png');
-  background-repeat: no-repeat;
 }
 
-
-.pattern-normal__rect {
-  position: absolute;
-  top: -20px;
-  bottom: 0;
-  left: -10px;
-  right: 0px;
-
-  background-image: url('../image/icons/bg-rect.png');
-  background-repeat: no-repeat;
+.pattern-rect__small-first {
+  top: -110px;
+  left: -80px;
 }
 
-.pattern-small__rect-second {
-  position: absolute;
-  top: 100px;
-  bottom: 0;
-  left:0;
-  right: 0;
+.pattern-rect__small-second {
+  left: -80px;
+  top: 140px;
+}
 
-  background-image: url('../image/icons/bg-react-small.png');
-  background-repeat: no-repeat;
+.pattern-rect__normal {
+  left: -120px;
 }

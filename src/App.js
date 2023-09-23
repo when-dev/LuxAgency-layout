@@ -1,4 +1,4 @@
-import SliderCalc from './components/sliderCalc/SliderCalc.jsx';
+import SliderCalc from "./components/sliderCalc/SliderCalc.jsx";
 import {
   // OUR_TEAM IMAGES
   maxWiwi,
@@ -22,13 +22,13 @@ import {
   aboutFifthIcon,
   aboutSixIcon,
 } from "./assets/image/index.js";
-
+import rectSmall from './assets/image/icons/bg-react-small.png';
+import rectNormal from './assets/image/icons/bg-rect.png';
 import thinkingMan from "./assets/image/about/thinking-man.png";
 import bgSquare from "./assets/image/icons/bg-border-square.png";
 import logo from "./assets/image/logo.svg";
 import callbtn from "./assets/image/call.svg";
 import "./assets/css/style.css";
-
 
 function App() {
   return (
@@ -315,25 +315,39 @@ function App() {
       </section>
 
       <section className="profitability-calc">
-        <div className="pattern-small__rect-first"></div>
-        <div className="pattern-normal__rect"></div>
-        <div className="pattern-small__rect-second"></div>
-
+        <div className="rect-patterns">
+          <img className="pattern-rect__small-first" src={rectSmall} alt="small" /><br />
+          <img className="pattern-rect__normal" src={rectNormal} alt="normal" /><br />
+          <img className="pattern-rect__small-second" src={rectSmall} alt="small" />
+        </div>
         <div className="container calc__container">
           <div className="calc-up__content">
             <h2 className="calc-title">
-            калькулятор <br /> доходности
+              калькулятор <br /> доходности
             </h2>
             <p className="calc-description">
-            Поможем определить стоимость вашего жилья с учётом текущего <br /> 
-            состояния рынка
+              Поможем определить стоимость вашего жилья с учётом текущего <br />
+              состояния рынка
             </p>
           </div>
         </div>
-        <div className="container">
+        <div className="container slider_index">
           <SliderCalc />
         </div>
       </section>
+
+      {/* <div className="our-services">
+        <div className="container services__container">
+          <div className="up-content">
+            <h2 className="services-title">Почему мы?</h2>
+            <p className="sevices-description">
+              Откройте для себя преимущества, которые делают наше <br />
+              агентство недвижимости непревзойденным выбором для вашей <br />
+              недвижимостной потребности
+            </p>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 }
