@@ -1,3 +1,4 @@
+import SliderCalc from './components/sliderCalc/SliderCalc.jsx';
 import {
   // OUR_TEAM IMAGES
   maxWiwi,
@@ -27,6 +28,7 @@ import bgSquare from "./assets/image/icons/bg-border-square.png";
 import logo from "./assets/image/logo.svg";
 import callbtn from "./assets/image/call.svg";
 import "./assets/css/style.css";
+
 
 function App() {
   return (
@@ -309,6 +311,23 @@ function App() {
               <button>Выбрать</button>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="profitability-calc">
+        <div className="container calc__container">
+          <div className="calc-up__content">
+            <h2 className="calc-title">
+            калькулятор <br /> доходности
+            </h2>
+            <p className="calc-description">
+            Поможем определить стоимость вашего жилья с учётом текущего <br /> 
+            состояния рынка
+            </p>
+          </div>
+        </div>
+        <div className="container">
+          <SliderCalc />
         </div>
       </section>
     </div>

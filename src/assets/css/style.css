@@ -703,3 +703,69 @@ p {
   color: white;
   cursor: pointer;
 }
+
+/* SECTION PROFITABILITY-CALC */
+
+.calc__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.calc-up__content {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.calc-up__content h2,
+p {
+  display: flex;
+  flex-direction: column;
+}
+
+.calc-title {
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 80px;
+  line-height: 58.59px;
+}
+
+.calc-title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 90px;
+  height: 3px;
+  background: linear-gradient(
+    270deg,
+    #b0772a 0%,
+    #deb864 16%,
+    #f4d780 25%,
+    #f4d780 46%,
+    #fbf9d8 65%,
+    #f4d780 75%,
+    #b0772a 100%
+  );
+}
+
+.calc-description {
+  background: linear-gradient(180deg, #c0c0c0 0%, rgba(192, 192, 192, 0) 275%);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Heebo", sans-serif;
+  margin-left: 100px;
+  margin-top: 60px;
+}
+
+.profitability-calc {
+  position: relative;
+}

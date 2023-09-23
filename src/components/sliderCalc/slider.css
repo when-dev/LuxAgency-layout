@@ -1,0 +1,240 @@
+.sliders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-info {
+  margin-bottom: 25px;
+}
+
+.slider-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #858585;
+  user-select: none;
+}
+
+.slider-info .slider-value {
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid;
+  padding: 7px 16px;
+  margin-left: 60px;
+}
+
+.slider-value input:focus {
+  outline: none;
+}
+
+.slider-value input {
+  max-width: 100px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.selected {
+  border: 2px solid transparent;
+  background: linear-gradient(
+    270deg,
+    #b0772a 0%,
+    #deb864 16%,
+    #f4d780 25%,
+    #f4d780 46%,
+    #fbf9d8 65%,
+    #f4d780 75%,
+    #b0772a 100%
+  );
+  box-shadow: inset 0px 0px 0px 100vw transparent;
+  border-radius: 15px;
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+.property-text__inner p {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #858585;
+}
+
+.slider__general-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+}
+
+@media (max-width: 1300px) {
+  .slider__general-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.slider-content__left {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+}
+
+.property-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.property-row {
+  max-width: 680px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  gap: 20px;
+}
+
+.property-row img {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.profit-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 58px;
+  width: 530px;
+  height: 245px;
+
+  border: 15px solid transparent;
+  background: linear-gradient(
+    270deg,
+    #b0772a 0%,
+    #deb864 16%,
+    #f4d780 25%,
+    #f4d780 46%,
+    #fbf9d8 65%,
+    #f4d780 75%,
+    #b0772a 100%
+  );
+  box-shadow: inset 0px 0px 0px 100vw black;
+  border-radius: 10px;
+}
+
+.border p {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+
+  background: linear-gradient(
+      259.94deg,
+      #b0772a 1.53%,
+      #deb864 16.83%,
+      #f4d780 25.43%,
+      #f4d780 45.5%,
+      #fbf9d8 63.66%,
+      #f4d780 73.22%,
+      #b0772a 97.12%
+    ),
+    linear-gradient(0deg, #ba8637, #ba8637);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.border p > span {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 79.69px;
+}
+
+.slider-content__right {
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.slider-content__right button {
+  margin-top: 35px;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  color: #000;
+  width: 530px;
+  height: 60px;
+  background: linear-gradient(
+    20.79deg,
+    #f6e188 -22.06%,
+    #a56a28 15.96%,
+    #e2ac54 40.29%,
+    #f2da82 69.17%,
+    #bb772c 96.54%,
+    #eda948 130%
+  );
+  cursor: pointer;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 24.97px;
+  margin-bottom: 50px;
+}
+
+.slider__general-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+}
+
+@media (max-width: 1300px) {
+  .slider__general-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.slider-content__left {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-right: 80px; 
+}
+
+@media (max-width: 1300px) {
+  .slider-content__left {
+    margin-right: 0;
+  }
+}
+
+.slider-content__right {
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1300px) {
+  .slider-content__right {
+    margin-top: 20px;
+  }
+}
