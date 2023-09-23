@@ -12,6 +12,8 @@ import {
   andrusha,
   platina,
 } from "./assets/image/index.js";
+import thinkingMan from "./assets/image/about/thinking-man.png";
+import bgSquare from './assets/image/icons/bg-border-square.png';
 import logo from "./assets/image/logo.svg";
 import callbtn from "./assets/image/call.svg";
 import "./assets/css/style.css";
@@ -58,8 +60,10 @@ function App() {
             Наша <br /> команда
           </h2>
           <p className="team-description">
-            Команда профессионалов, которая работает над тем, чтобы предоставить <br />
-            вам лучший сервис и креативные решения. Мы рады реализовать самые <br />
+            Команда профессионалов, которая работает над тем, чтобы предоставить{" "}
+            <br />
+            вам лучший сервис и креативные решения. Мы рады реализовать самые{" "}
+            <br />
             сложные проекты и предоставить вам недвижимость вашей мечты!
           </p>
         </div>
@@ -113,6 +117,50 @@ function App() {
               <img src={platina} alt="Платина" />
               <p className="team-member-name">Платина</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="about-company">
+        <div className="container">
+          <div className="left-content">
+            <h2 className="about-title">о компании</h2>
+            <img src={thinkingMan} alt="thinkingMan" />
+          </div>
+          <div className="right-content">
+            <p className="gradient-text">
+              Агентство начало свою деятельность с 2015 <br /> года и по
+              настоящее время радует <br /> клиентов своими проектами
+            </p>
+            <p className="about__company-text">
+              Наше агентство недвижимости - это <br /> надежный партнер в мире
+              недвижимости, <br /> предоставляющий высококачественные <br />{" "}
+              услуги по покупке, продаже и управлению <br /> недвижимостью.{" "}
+              <br /> <br /> Мы сочетаем профессионализм, экспертизу <br /> и
+              внимание к деталям, чтобы помочь <br />
+              нашим клиентам достичь своих целей в <br /> недвижимости,
+              независимо от их <br /> потребностей и бюджета. Доверьтесь нам,{" "}
+              <br /> и мы сделаем ваше недвижимое будущее <br /> более успешным
+              и удовлетворительным.
+            </p>
+            <div className="company-stats">
+              <div className="company-years">
+                <span>8</span>
+                <p>
+                  лет на <br /> рынке
+                </p>
+              </div>
+              <div className="line"></div>
+              <div className="company-deals">
+                <span>30K+</span>
+                <p>
+                  выполненных <br /> сделок
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="border-square">
+            <img src={bgSquare} alt="" />
           </div>
         </div>
       </section>

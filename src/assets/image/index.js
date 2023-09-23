@@ -12,7 +12,6 @@ import andrusha from "./our_team/andrusha.png";
 import platina from "./our_team/platina.png";
 
 
-// export default maxWiwi;
 export {
   maxWiwi,
   wellSofi,
