@@ -470,11 +470,6 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  z-index: 100;
-}
-
-.our-rates {
-  position: relative;
 }
 
 .our-rates .up-content {
@@ -776,7 +771,7 @@ p {
   position: relative;
 }
 
-.rect-patterns img{
+.rect-patterns img {
   position: absolute;
 }
 
@@ -793,3 +788,63 @@ p {
 .pattern-rect__normal {
   left: -120px;
 }
+
+/* SECTION OUR-SERVICES */
+
+.services__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.our-services .up-content {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.our-services .up-content h2,
+p {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-title {
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 80px;
+  line-height: 58.59px;
+}
+
+.services-title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 90px;
+  height: 3px;
+  background: linear-gradient(
+    270deg,
+    #b0772a 0%,
+    #deb864 16%,
+    #f4d780 25%,
+    #f4d780 46%,
+    #fbf9d8 65%,
+    #f4d780 75%,
+    #b0772a 100%
+  );
+}
+
+.services-description {
+  color: #C0C0C0;
+
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Heebo", sans-serif;
+  margin-left: 240px;
+  margin-top: 10px;
+}
+

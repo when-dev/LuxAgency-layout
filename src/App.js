@@ -1,4 +1,5 @@
 import SliderCalc from "./components/sliderCalc/SliderCalc.jsx";
+import Slider from "./components/slider/Slider.jsx";
 import {
   // OUR_TEAM IMAGES
   maxWiwi,
@@ -21,9 +22,16 @@ import {
   aboutFourthIcon,
   aboutFifthIcon,
   aboutSixIcon,
+
+  // OUR-SERVICES IMAGES
+  // arrowLeft,
+  // arrowRight,
+  // firstServicesPic,
+  // secondServicesPic,
+  // thirdServicesPic,
 } from "./assets/image/index.js";
-import rectSmall from './assets/image/icons/bg-react-small.png';
-import rectNormal from './assets/image/icons/bg-rect.png';
+import rectSmall from "./assets/image/icons/bg-react-small.png";
+import rectNormal from "./assets/image/icons/bg-rect.png";
 import thinkingMan from "./assets/image/about/thinking-man.png";
 import bgSquare from "./assets/image/icons/bg-border-square.png";
 import logo from "./assets/image/logo.svg";
@@ -316,9 +324,19 @@ function App() {
 
       <section className="profitability-calc">
         <div className="rect-patterns">
-          <img className="pattern-rect__small-first" src={rectSmall} alt="small" /><br />
-          <img className="pattern-rect__normal" src={rectNormal} alt="normal" /><br />
-          <img className="pattern-rect__small-second" src={rectSmall} alt="small" />
+          <img
+            className="pattern-rect__small-first"
+            src={rectSmall}
+            alt="small"
+          />
+          <br />
+          <img className="pattern-rect__normal" src={rectNormal} alt="normal" />
+          <br />
+          <img
+            className="pattern-rect__small-second"
+            src={rectSmall}
+            alt="small"
+          />
         </div>
         <div className="container calc__container">
           <div className="calc-up__content">
@@ -331,23 +349,29 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="container slider_index">
+        <div className="container">
           <SliderCalc />
         </div>
       </section>
 
-      {/* <div className="our-services">
+      <div className="our-services">
         <div className="container services__container">
           <div className="up-content">
-            <h2 className="services-title">Почему мы?</h2>
-            <p className="sevices-description">
-              Откройте для себя преимущества, которые делают наше <br />
-              агентство недвижимости непревзойденным выбором для вашей <br />
-              недвижимостной потребности
+            <h2 className="services-title">
+              Наши <br /> услуги
+            </h2>
+            <p className="services-description">
+              Наши услуги аренды недвижимости - это ваш ключ к комфортному и{" "}
+              <br />
+              удобному жилью. Мы готовы сделать ваш поиск максимально <br />
+              комфортными
             </p>
           </div>
+          <div className="down-content">
+            <Slider />
+          </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

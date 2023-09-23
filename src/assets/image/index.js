@@ -20,6 +20,13 @@ import aboutFourthIcon from './icons/about_icon-4.png';
 import aboutFifthIcon from './icons/about_icon-5.png';
 import aboutSixIcon from './icons/about_icon-6.png';
 
+// IMPORT OUR-SERVICES IMAGES
+import arrowLeft from './our_services/btn-arrow-left.png';
+import arrowRight from './our_services/btn-arrow-right.png';
+import firstServicesPic from './our_services/picture-1.png';
+import secondServicesPic from './our_services/picture-2.png';
+import thirdServicesPic from './our_services/picture-3.png';
+
 
 // EXPORT OUR_TEAM IMAGES
 export {
@@ -37,8 +44,6 @@ export {
   platina,
 };
 
-
-
 // EXPORT WHY-US IMAGES
 export {
   aboutFirstIcon,
@@ -46,5 +51,14 @@ export {
   aboutThirdIcon,
   aboutFourthIcon,
   aboutFifthIcon,
-  aboutSixIcon
+  aboutSixIcon,
 };
+
+// EXPORT OUR-SERVICES IMAGES
+export {
+  arrowLeft,
+  arrowRight,
+  firstServicesPic,
+  secondServicesPic,
+  thirdServicesPic,
+}
