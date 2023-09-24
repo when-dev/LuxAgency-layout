@@ -771,6 +771,11 @@ p {
   position: relative;
 }
 
+.slide-pos {
+  position: relative;
+  z-index: 1;
+}
+
 .rect-patterns img {
   position: absolute;
 }
@@ -796,6 +801,18 @@ p {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+}
+
+.our-services {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.our-services > img {
+  position: absolute;
+  left: 0;
+  bottom: -250px;
+  z-index: 0;
 }
 
 .our-services .up-content {
@@ -989,4 +1006,81 @@ p {
 
   background-image: url('../image/icons/reviews-icon.png');
   background-repeat: no-repeat;
+}
+
+.diamond-pattern img {
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+  z-index: 0;
+}
+
+/* SECTION CONSULTATION */
+
+.consultation-section {
+  z-index: 1;
+ position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: #161616;
+  width: 1300px;
+  height: 194px;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: white;
+}
+
+.consultation-title {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 35px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 25px;
+}
+
+.consultation-text {
+  font-size: 20px;
+  line-height: 29.38px;
+  margin-right: 30px; 
+  color: #C0C0C0;
+}
+
+.input-div {
+  position: relative;
+}
+
+.input-div img {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  cursor: pointer;
+}
+
+.phone-input {
+  width: 485px;
+  height: 65px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background: #161616;
+  margin-left: 45px;
+}
+
+
+
+.phone-input::placeholder {
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.phone-input[type="tel"] {
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+
+  padding-left: 25px;
+  font-size: 16px;
 }

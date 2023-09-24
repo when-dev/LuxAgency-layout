@@ -1,5 +1,6 @@
 import SliderCalc from "./components/sliderCalc/SliderCalc.jsx";
 import Slider from "./components/slider/Slider.jsx";
+import PhoneNumberInput from "./components/phoneInput/PhoneNumberInput.jsx";
 import {
   // OUR_TEAM IMAGES
   maxWiwi,
@@ -35,6 +36,8 @@ import {
   secondPic,
   thirdPic,
 } from "./assets/image/index.js";
+import figureBg from "./assets/image/icons/bg-figure.png";
+import diamondBg from "./assets/image/icons/bg-diamond.png";
 import stars from "./assets/image/icons/star.png";
 import rectSmall from "./assets/image/icons/bg-react-small.png";
 import rectNormal from "./assets/image/icons/bg-rect.png";
@@ -355,8 +358,11 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="container">
+        <div className="container slide-pos">
           <SliderCalc />
+        </div>
+        <div className="diamond-pattern">
+          <img src={diamondBg} alt="diamond" />
         </div>
       </section>
 
@@ -377,9 +383,24 @@ function App() {
             <Slider />
           </div>
         </div>
+        <img src={figureBg} alt="" />
       </div>
 
-      {/* skip button-to-call and our-project  */}
+      <section className="consultation-section">
+        <div>
+          <div className="consultation-title">
+            Нужна индивидуальная консультация?
+          </div>
+          <div className="consultation-text">
+            Оставьте телефон и мы перезвоним вам в течение 30 минут
+          </div>
+        </div>
+        <PhoneNumberInput />
+      </section>
+
+      <section className="our-projects">
+        
+      </section>
 
       <section className="our-reviews">
         <div className="container reviews__container">
