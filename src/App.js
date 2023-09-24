@@ -54,10 +54,13 @@ import callbtn from "./assets/image/call.svg";
 import "./assets/css/style.css";
 import "./assets/css/mediaRequest.css";
 
+import { Link } from "react-scroll";
+
 function App() {
+  
   return (
     <div className="App">
-      <header className="header">
+      <header id="home" className="header">
         <div className="header__inner">
           <div className="container">
             <div className="header__hat">
@@ -65,19 +68,29 @@ function App() {
               <nav className="header__nav">
                 <ul>
                   <li>
-                    <a href="#!">Главная</a>
+                    <Link to="home" smooth={true} duration={1000}>
+                      <a href="#!">Главная</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#!">О компании</a>
+                    <Link to="about" smooth={true} duration={1000}>
+                      <a href="#!">О компании</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#!">Услуги</a>
+                    <Link to="services" smooth={true} duration={1000}>
+                      <a href="#!">Услуги</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#!">Проекты</a>
+                    <Link to="projects" smooth={true} duration={1000}>
+                      <a href="#!">Проекты</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#!">Отзывы</a>
+                    <Link to="reviews" smooth={true} duration={1000}>
+                      <a href="#!">Отзывы</a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -162,7 +175,7 @@ function App() {
         </div>
       </section>
 
-      <section className="about-company">
+      <section className="about-company" id="about">
         <div className="container">
           <div className="left-content">
             <h2 className="about-title">о компании</h2>
@@ -378,7 +391,7 @@ function App() {
         </div>
       </section>
 
-      <div className="our-services">
+      <div className="our-services" id="services">
         <div className="container services__container">
           <div className="up-content">
             <h2 className="services-title">
@@ -410,7 +423,7 @@ function App() {
         <PhoneNumberInput />
       </section>
 
-      <section className="our-projects">
+      <section className="our-projects" id="projects">
         <div className="container projects__container">
           <div className="up-content">
             <h2 className="projects-title">
@@ -429,7 +442,7 @@ function App() {
         </div>
       </section>
 
-      <section className="our-reviews">
+      <section className="our-reviews" id="reviews">
         <div className="container reviews__container">
           <div className="up-content">
             <h2 className="reviews-title">ОТЗЫВЫ</h2>

@@ -14,19 +14,19 @@ function SubMenu() {
       <nav className={isOpen ? "" : "hidden"}>
         <ul>
           <li>
-            <a href="#!">Главная</a>
+            <a href="#main">Главная</a>
           </li>
           <li>
-            <a href="#!">О компании</a>
+            <a href="#about">О компании</a>
           </li>
           <li>
-            <a href="#!">Услуги</a>
+            <a href="#services">Услуги</a>
           </li>
           <li>
-            <a href="#!">Проекты</a>
+            <a href="#projects">Проекты</a>
           </li>
           <li>
-            <a href="#!">Отзывы</a>
+            <a href="#reviews">Отзывы</a>
           </li>
         </ul>
       </nav>
