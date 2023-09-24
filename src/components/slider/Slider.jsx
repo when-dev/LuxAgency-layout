@@ -54,14 +54,25 @@ const Slider = () => {
 
   return (
     <div className="slider__container">
-      <div className="slider-controls">
-        <img
-          src={arrowLeft}
-          alt="arrow-left"
-          className="slider-control-button"
-          onClick={prevSlide}
-        />
+      <div className="slider-general__container">
+        <div className="slider-controls">
+          <img
+            src={arrowLeft}
+            alt="arrow-left"
+            className="slider-control-button"
+            onClick={prevSlide}
+          />
+        </div>
+        <div className="slider-controls-adaptive">
+          <img
+            src={arrowRight}
+            alt="arrow-right"
+            className="slider-control-button"
+            onClick={nextSlide}
+          />
+        </div>
       </div>
+
       <div className="slider-row">
         <img src={slides[currentSlide].image} alt={`slide-${currentSlide}`} />
         <div className="slider-info">
@@ -74,7 +85,7 @@ const Slider = () => {
         </div>
       </div>
 
-      <div className="slider-controls">
+      <div className="slider-controls for-adaptive">
         <img
           src={arrowRight}
           alt="arrow-right"

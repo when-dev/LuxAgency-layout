@@ -54,7 +54,7 @@
     #b0772a 100%
   );
   box-shadow: inset 0px 0px 0px 100vw transparent;
-  border-radius: 15px;
+  border-radius: 10px;
   transform: scale(1.05);
   transition: transform 0.2s;
 }

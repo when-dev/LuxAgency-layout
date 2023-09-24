@@ -1,80 +1,126 @@
 .our-projects .down-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 55px;
-    margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+  margin-top: 60px;
+}
+
+.apartments h3 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 19.92px;
+  margin-bottom: 20px;
+}
+.apartments img {
+  cursor: pointer;
+}
+
+.luxe-apartments {
+  margin-top: 200px;
+}
+
+.luxe-apartments h3,
+.business-center h3 {
+  color: #c0c0c0;
+}
+
+.business-center {
+  margin-top: -60px;
+}
+
+.pattern-abs__up {
+  position: absolute;
+  bottom: 480px;
+  left: 463px;
+  z-index: -1;
+}
+
+.pattern-abs__down {
+  position: absolute;
+  bottom: 140px;
+  right: 440px;
+  z-index: -1;
+}
+
+.sliderToPercent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderToPercent span {
+  position: relative;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  top: 37px;
+}
+
+.sliderToPercent span:first-child {
+  right: 20px;
+}
+
+.sliderToPercent span:last-child {
+  left: 20px;
+}
+
+.slider-track-percent {
+  margin-top: 75px;
+  max-width: 403px;
+  height: 8px;
+  border-radius: 24px;
+}
+
+@media (max-width: 1500px) {
+  .luxe-apartments img.pattern-abs__up,
+  .business-center img.pattern-abs__down {
+    display: none;
   }
-  
-  .apartments h3 {
-    text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 19.92px;
-    margin-bottom: 20px;
-  }
-  .apartments img {
-    cursor: pointer;
-  }
-  
-  .luxe-apartments {
-    margin-top: 200px;
-  }
-  
-  .luxe-apartments h3,
-  .business-center h3 {
-    color: #C0C0C0;
-  }
-  
-  .business-center {
-    margin-top: -60px;
-  }
-  
-  .pattern-abs__up {
-    position: absolute;
-    bottom: 480px;
-    left: 463px;
-    z-index: -1;
-  }
-  
-  
-  .pattern-abs__down {
-    position: absolute;
-    bottom: 140px;
-    right: 440px;
-    z-index: -1;
+}
+
+@media (max-width: 1320px) {
+  .down-content .luxe-apartments img,
+  .down-content .business-center img {
+    max-width: 280px;
   }
 
-  .sliderToPercent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .down-content .central-office img {
+    max-width: 340px;
   }
 
   .sliderToPercent span {
     position: relative;
 
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
-    top: 37px;
-
+    top: 27px;
   }
-
 
   .sliderToPercent span:first-child {
-    right: 20px;
-
+    right: 10px;
   }
-
+  
   .sliderToPercent span:last-child {
-    left: 20px;
+    left: 10px;
   }
 
-    .slider-track-percent {
-    margin-top: 75px;
+  .slider-track-percent {
+    margin-top: 55px;
     max-width: 403px;
-    height: 8px;
+    height: 6px;
     border-radius: 24px;
-  } 
+  }
 
+  .apartments h3 {
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.92px;
+    margin-bottom: 20px;
+  }
+}

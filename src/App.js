@@ -2,6 +2,8 @@ import SliderCalc from "./components/sliderCalc/SliderCalc.jsx";
 import Slider from "./components/slider/Slider.jsx";
 import PhoneNumberInput from "./components/phoneInput/PhoneNumberInput.jsx";
 import SlideToPercent from "./components/slideToPercent/SlideToPercent.jsx";
+import SubMenu from "./components/submenu/SubMenu.jsx";
+
 import {
   // OUR_TEAM IMAGES
   maxWiwi,
@@ -50,6 +52,7 @@ import bgSquare from "./assets/image/icons/bg-border-square.png";
 import logo from "./assets/image/logo.svg";
 import callbtn from "./assets/image/call.svg";
 import "./assets/css/style.css";
+import "./assets/css/mediaRequest.css";
 
 function App() {
   return (
@@ -57,27 +60,32 @@ function App() {
       <header className="header">
         <div className="header__inner">
           <div className="container">
-            <img className="logo" src={logo} alt="logo" />
-            <nav className="header__nav">
-              <ul>
-                <li>
-                  <a href="#!">Главная</a>
-                </li>
-                <li>
-                  <a href="#!">О компании</a>
-                </li>
-                <li>
-                  <a href="#!">Услуги</a>
-                </li>
-                <li>
-                  <a href="#!">Проекты</a>
-                </li>
-                <li>
-                  <a href="#!">Отзывы</a>
-                </li>
-              </ul>
-            </nav>
-            <img className="callbtn" src={callbtn} alt="callbtn" />
+            <div className="header__hat">
+              <img className="logo" src={logo} alt="logo" />
+              <nav className="header__nav">
+                <ul>
+                  <li>
+                    <a href="#!">Главная</a>
+                  </li>
+                  <li>
+                    <a href="#!">О компании</a>
+                  </li>
+                  <li>
+                    <a href="#!">Услуги</a>
+                  </li>
+                  <li>
+                    <a href="#!">Проекты</a>
+                  </li>
+                  <li>
+                    <a href="#!">Отзывы</a>
+                  </li>
+                </ul>
+              </nav>
+              <SubMenu />
+              <a href="#!" className="callbtn">
+                <img src={callbtn} alt="callBtn" />
+              </a>
+            </div>
           </div>
         </div>
         <h1>агентство недвижимости</h1>
@@ -476,7 +484,7 @@ function App() {
                   реагируют на запросы арендаторов и обеспечивают <br />
                   стабильный доход от моих инвестиций. Рекомендую!
                 </p>
-                <div className="stars">
+                <div className="stars last-child">
                   <img src={stars} alt="star" />
                   <img src={stars} alt="star" />
                   <img src={stars} alt="star" />
