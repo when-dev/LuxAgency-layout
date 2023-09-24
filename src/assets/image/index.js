@@ -32,6 +32,12 @@ import firstPic from './our-reviews/pic-1.png';
 import secondPic from './our-reviews/pic-2.png'; 
 import thirdPic from './our-reviews/pic-3.png'; 
 
+// IMPORT OUR-PROJECTS IMAGES
+import luxeApartaments from './our_projects/lux-apartment.png';
+import centralOffice from './our_projects/central-office.png';
+import businessCenter from './our_projects/business-center.png';
+
+
 // EXPORT OUR_TEAM IMAGES
 export {
   maxWiwi,
@@ -72,4 +78,11 @@ export {
   firstPic,
   secondPic,
   thirdPic
+}
+
+// EXPORT OUR-PROJECTS IMAGES
+export {
+  luxeApartaments,
+  centralOffice,
+  businessCenter
 }

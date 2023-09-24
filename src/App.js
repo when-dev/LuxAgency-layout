@@ -1,6 +1,8 @@
 import SliderCalc from "./components/sliderCalc/SliderCalc.jsx";
 import Slider from "./components/slider/Slider.jsx";
 import PhoneNumberInput from "./components/phoneInput/PhoneNumberInput.jsx";
+import SlideToPercent from './components/slideToPercent/SlideToPercent.jsx';
+
 import {
   // OUR_TEAM IMAGES
   maxWiwi,
@@ -24,17 +26,15 @@ import {
   aboutFifthIcon,
   aboutSixIcon,
 
-  // OUR-SERVICES IMAGES
-  // arrowLeft,
-  // arrowRight,
-  // firstServicesPic,
-  // secondServicesPic,
-  // thirdServicesPic,
-
   // OUR-REVIEWS IMAGES
   firstPic,
   secondPic,
   thirdPic,
+
+  // OUR-PROJECTS IMAGES
+  // luxeApartaments,
+  // centralOffice,
+  // businessCenter,
 } from "./assets/image/index.js";
 import figureBg from "./assets/image/icons/bg-figure.png";
 import diamondBg from "./assets/image/icons/bg-diamond.png";
@@ -399,7 +399,22 @@ function App() {
       </section>
 
       <section className="our-projects">
-        
+        <div className="container projects__container">
+          <div className="up-content">
+            <h2 className="projects-title">
+              Наши <br /> проекты
+            </h2>
+            <p className="projects-description">
+              Мы предоставляем разнообразные проекты, включая продажу <br />
+              эксклюзивных жилых недвижимых объектов, управление инвестициями в{" "}
+              <br />
+              арендную недвижимость, а также поддержку покупки первого дома.
+            </p>
+          </div>
+          <div className="container">
+            <SlideToPercent />
+          </div>
+        </div>
       </section>
 
       <section className="our-reviews">

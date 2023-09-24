@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./slider.css";
+import "./sliderCalc.css";
 import typeOne from "../../assets/image/profitability-calc/type-1.png";
 import typeTwo from "../../assets/image/profitability-calc/type-2.png";
 import typeThree from "../../assets/image/profitability-calc/type-3.png";
