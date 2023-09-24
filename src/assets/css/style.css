@@ -1155,3 +1155,132 @@ p {
   margin-top: 10px;
 }
 
+/* FOOTER */
+
+.footer__container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.footer__up-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__up-content h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.footer__up-content h2 > span {
+  background: linear-gradient(
+      259.94deg,
+      #b0772a 1.53%,
+      #deb864 16.83%,
+      #f4d780 25.43%,
+      #f4d780 45.5%,
+      #fbf9d8 63.66%,
+      #f4d780 73.22%,
+      #b0772a 97.12%
+    ),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-left: 10px;
+}
+
+.footer__up-content .social-network {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-line {
+  margin-top: 40px;
+  width: 1296px;
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    #b0772a 0%,
+    #deb864 16%,
+    #f4d780 25%,
+    #f4d780 46%,
+    #fbf9d8 65%,
+    #f4d780 75%,
+    #b0772a 100%
+  );
+}
+
+.footer__down-content {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footer__down-content ul {
+  display: flex;
+  gap: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
+}
+
+.footer-upper__down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.footer__general-info {
+  display: flex;
+}
+
+.footer__general-info .mail p,
+.location p {
+  font-family: "Heebo", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.footer__general-info .location img {
+  margin-left: 20px;
+}
+
+.mail,
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.footer-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  padding-bottom: 100px;
+}
+
+.footer-button a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30px;
+  border: 5px solid;
+  border-radius: 50px;
+  width: 409px;
+  height: 65px;
+}
+
+.footer-button img {
+  position: absolute;
+  right: 4px;
+}

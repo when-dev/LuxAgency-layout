@@ -1,8 +1,7 @@
 import SliderCalc from "./components/sliderCalc/SliderCalc.jsx";
 import Slider from "./components/slider/Slider.jsx";
 import PhoneNumberInput from "./components/phoneInput/PhoneNumberInput.jsx";
-import SlideToPercent from './components/slideToPercent/SlideToPercent.jsx';
-
+import SlideToPercent from "./components/slideToPercent/SlideToPercent.jsx";
 import {
   // OUR_TEAM IMAGES
   maxWiwi,
@@ -31,11 +30,16 @@ import {
   secondPic,
   thirdPic,
 
-  // OUR-PROJECTS IMAGES
-  // luxeApartaments,
-  // centralOffice,
-  // businessCenter,
+  // FOOTER SOCIAL-NETWORK IMAGES
+  vkIcon,
+  instagramIcon,
+  telegramIcon,
+  mailIcon,
+  locationIcon,
+  // mailIcon,
+  // locationIcon,
 } from "./assets/image/index.js";
+import submitBtn from "./assets/image/icons/submit-btn.png";
 import figureBg from "./assets/image/icons/bg-figure.png";
 import diamondBg from "./assets/image/icons/bg-diamond.png";
 import stars from "./assets/image/icons/star.png";
@@ -467,11 +471,10 @@ function App() {
               <div className="down-content__border">
                 <img src={thirdPic} alt="thirdPic" />
                 <p>
-                  Сотрудничество с агентством недвижимости было <br />
-                  удивительным опытом! Их команда помогла мне <br />
-                  найти мою мечтательную квартиру, и сделала все, <br />
-                  чтобы сделка прошла гладко. Профессионализм и <br />
-                  забота о клиентах на высшем уровне.
+                  Агентство недвижимости отлично управляет моими <br />
+                  арендными объектами. Они всегда на связи, быстро <br />
+                  реагируют на запросы арендаторов и обеспечивают <br />
+                  стабильный доход от моих инвестиций. Рекомендую!
                 </p>
                 <div className="stars">
                   <img src={stars} alt="star" />
@@ -486,6 +489,70 @@ function App() {
           </div>
         </div>
       </section>
+
+      <footer className="footer">
+        <div className="footer__container">
+          <div className="footer__up-content">
+            <img src={logo} alt="logo" />
+            <h2>
+              Преврати мечту в <span>реальность</span>
+            </h2>
+            <div className="social-network">
+              <a href="#!">
+                <img src={vkIcon} alt="vk" />
+              </a>
+              <a href="#!">
+                <img src={instagramIcon} alt="insta" />
+              </a>
+              <a href="#!">
+                <img src={telegramIcon} alt="telega" />
+              </a>
+            </div>
+          </div>
+          <div className="footer-line"></div>
+          <div className="footer__down-content">
+            <ul>
+              <li>
+                <a href="#!">Главная</a>
+              </li>
+              <li>
+                <a href="#!">О компании</a>
+              </li>
+              <li>
+                <a href="#!">Услуги</a>
+              </li>
+              <li>
+                <a href="#!">Проекты</a>
+              </li>
+              <li>
+                <a href="#!">Отзывы</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-upper__down">
+            <div className="footer__general-info">
+              <div className="mail">
+                <img src={mailIcon} alt="mail" />
+                <p>LuxAgency@gmail.com</p>
+              </div>
+              <div className="location">
+                <img src={locationIcon} alt="location" />
+                <p>
+                  г. Москва ул. Шоссе Энтузиастов, д. 61, к. 60 <br />
+                  ОГРН: 1205000110732 ИНН: 5001136902
+                </p>
+              </div>
+            </div>
+
+            <div className="footer-button">
+              <a href="#!">
+                Перейти в Telegram для обсуждения
+                <img src={submitBtn} alt="btn" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

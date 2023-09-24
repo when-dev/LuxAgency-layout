@@ -37,6 +37,12 @@ import luxeApartaments from './our_projects/lux-apartment.png';
 import centralOffice from './our_projects/central-office.png';
 import businessCenter from './our_projects/business-center.png';
 
+// IMPORT FOOTER IMAGES
+import vkIcon from './icons/vk.svg';
+import instagramIcon from './icons/instagram.svg';
+import telegramIcon from './icons/telegram.svg';
+import mailIcon from './icons/mail.svg';
+import locationIcon from './icons/location.svg';
 
 // EXPORT OUR_TEAM IMAGES
 export {
@@ -85,4 +91,13 @@ export {
   luxeApartaments,
   centralOffice,
   businessCenter
+}
+
+// EXPORT FOOTER IMAGES
+export {
+  vkIcon,
+  instagramIcon,
+  telegramIcon,
+  mailIcon,
+  locationIcon
 }
