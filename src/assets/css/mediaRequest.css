@@ -21,6 +21,9 @@
 }
 
 @media (max-width: 1320px) {
+  .header__container {
+    gap: 120px;
+  }
   .consultation-section {
     display: flex;
     align-items: center;
@@ -436,17 +439,10 @@
   .our-reviews .down-content__border h3 {
     margin-bottom: 20px;
     font-size: 18px;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
   }
 
   .our-reviews .down-content__border p {
-    color: #868686;
-
     font-size: 11px;
-    font-weight: 500;
-    font-family: "Heebo", sans-serif;
-    line-height: 1.3;
   }
   .our-reviews .down-content__border {
     position: relative;
@@ -476,9 +472,6 @@
     right: 0;
     left: 210px;
     bottom: 0;
-
-    background-image: url("../image/icons/reviews-icon.png");
-    background-repeat: no-repeat;
   }
 
   .our-reviews .down-content__border .stars.last-child {
@@ -529,6 +522,9 @@
 }
 
 @media (max-width: 1200px) {
+  .header__container {
+    gap: 600px;
+  }
   .team-title {
     font-size: 30px;
   }
@@ -693,11 +689,48 @@
   .header h2 {
     font-size: 25px;
   }
+
+  .projects-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .projects-title::after {
+    left: 35px;
+  }
+
+  .projects-description {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 1020px) {
-  .our-projects {
+  .header__container {
+    gap: 400px;
+  }
+  .sliderToPercent {
     display: none;
+  }
+
+  .our-projects .up-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .our-projects .down-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .luxe-apartments {
+    margin-top: 0;
+  }
+  .central-office img {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 60px;
   }
 }
 
@@ -731,6 +764,7 @@
   }
   .team-description {
     margin-top: 30px;
+    margin-left: 0;
     font-size: 14px;
   }
 
@@ -993,9 +1027,23 @@
   .slider-control-button {
     padding: 0;
   }
+
+  .projects-title {
+    font-size: 25px;
+  }
+  .projects-title::after {
+    left: 12px;
+  }
+
+  .projects-description {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 775px) {
+  .header__container {
+    gap: 200px;
+  }
   .footer__up-content {
     display: flex;
     flex-direction: column;
@@ -1051,6 +1099,18 @@
 }
 
 @media (max-width: 589px) {
+
+  .rates-description {
+    font-size: 14px;
+  }
+
+  .projects-description {
+    font-size: 12px;
+  }
+  .header__container {
+    gap: 100px;
+  }
+
   .our-services {
     display: none;
   }
@@ -1084,6 +1144,27 @@
     gap: 10px;
     align-items: center;
   }
+
+  .rates__inner-bg {
+    width: 360px;
+    height: 606px;
+  }
+  .rates__inner-bg button {
+    margin-top: 10px;
+  }
+
+  .rates__level {
+    margin-bottom: 30px;
+  }
+
+  .rates__level h2,
+  .rates__level span {
+    font-size: 30px;
+  }
+
+  .rates__info p {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1093,9 +1174,109 @@
   .consultation-text {
     font-size: 12px;
   }
- 
 
   .header h2 {
     font-size: 14px;
+  }
+  .phone-input {
+    width: 300px;
+    height: 45px;
+  }
+
+  .input-div img {
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .rates__inner-bg {
+    width: 330px;
+    height: 566px;
+  }
+  .rates__inner-bg button {
+    margin: 0;
+    text-align: center;
+    width: 260px;
+    height: 50px;
+  }
+
+  .rates__level {
+    margin-bottom: 30px;
+  }
+
+  .rates__level h2,
+  .rates__level span {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .rates__info p {
+    font-size: 12px;
+  }
+
+  .footer__general-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-button a {
+    font-size: 12px;
+    width: 300px;
+    height: 45px;
+  }
+
+  .footer-button img {
+    width: 40px;
+    height: 40px;
+    top: 3px;
+  }
+  .about-company {
+    margin-bottom: 0;
+  }
+
+  .company-stats span {
+    font-size: 35px;
+  }
+  .company-stats .line {
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  .slider-content__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profit-info {
+    max-width: 330px;
+    height: 255px;
+  }
+
+  .slider-content__right button {
+    font-size: 14px;
+    width: 330px;
+    height: 50px;
+  }
+  .why-us .down-content__border {
+    width: 330px;
+    height: 250px;
+  }
+
+  .why-us .down-content__border img {
+    width: 60px;
+    height: 50px;
+  }
+  .why-us .down-content__border h3 {
+    font-size: 16px;
+  }
+  .why-us .down-content__border p {
+    font-size: 13px;
   }
 }

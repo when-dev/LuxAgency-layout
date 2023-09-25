@@ -21,26 +21,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
   position: relative;
-  margin: 0; 
-  padding: 0; 
 }
-
-.header__hat{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  margin: 0; 
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -49,12 +33,19 @@
   justify-content: space-between;
 }
 
-.header__inner {
-  background-color: rgba(41, 44, 48, 0.27);
-  max-width: 1300px;
-  margin: 0 auto;
+.header__container {
+  gap: 160px;
 }
 
+
+.header__inner {
+  position: fixed;
+  height: 105px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+}
 
 nav.header__nav ul {
   display: flex;
@@ -73,14 +64,14 @@ nav.header__nav ul li a {
   color: white;
 }
 
-.header__inner img.logo {
+.header__inner .logo img {
   padding: 40px 30px 40px 30px;
   width: 200px;
 }
 
 .callbtn img {
   cursor: pointer;
-  width: 200px;
+  width: 175px;
   height: 45px;
 }
 
@@ -93,7 +84,7 @@ h2,
 }
 
 .header h1 {
-  margin-top: 350px;
+  padding-top: 250px;
   text-transform: uppercase;
   font-size: 70px;
 }
@@ -554,8 +545,8 @@ p {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 420px;
-  height: 716px;
+  max-width: 420px;
+  max-height: 716px;
   padding: 40px 32px 50px;
   border-radius: 10px;
 }
@@ -1327,15 +1318,12 @@ p {
   height: 32px;
 }
 
-
-
-.header__general{
+.header__general {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-
 
 .sub-menu ul {
   position: absolute;
@@ -1343,13 +1331,14 @@ p {
 
   display: flex;
   flex-direction: column;
-  
+  gap: 10px;
+
   background: #090909;
   border-radius: 10px;
   list-style: none;
-  
+
   padding: 20px;
-  width: 250px;
+  width: 200px;
   border: 1px solid transparent;
   background: linear-gradient(
     270deg,
@@ -1363,13 +1352,21 @@ p {
   );
   box-shadow: inset 0px 0px 0px 100vw #090909;
   border-radius: 10px;
+}
+
+.sub-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-menu li  {
+  width: 100%;
+  border-bottom: 3px solid white;
+  padding-bottom: 10px;
 
 }
 
 .hidden {
   display: none;
 }
-
-
-
-

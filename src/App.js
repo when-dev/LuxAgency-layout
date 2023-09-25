@@ -57,48 +57,45 @@ import "./assets/css/mediaRequest.css";
 import { Link } from "react-scroll";
 
 function App() {
-  
   return (
     <div className="App">
       <header id="home" className="header">
         <div className="header__inner">
-          <div className="container">
-            <div className="header__hat">
-              <img className="logo" src={logo} alt="logo" />
-              <nav className="header__nav">
-                <ul>
-                  <li>
-                    <Link to="home" smooth={true} duration={1000}>
-                      <a href="#!">Главная</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="about" smooth={true} duration={1000}>
-                      <a href="#!">О компании</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="services" smooth={true} duration={1000}>
-                      <a href="#!">Услуги</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="projects" smooth={true} duration={1000}>
-                      <a href="#!">Проекты</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="reviews" smooth={true} duration={1000}>
-                      <a href="#!">Отзывы</a>
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
-              <SubMenu />
-              <a href="#!" className="callbtn">
-                <img src={callbtn} alt="callBtn" />
-              </a>
-            </div>
+          <div className="container header__container">
+            <img className="logo" src={logo} alt="logo" />
+            <nav className="header__nav">
+              <ul>
+                <li>
+                  <Link to="home" smooth={true} duration={1000}>
+                    <a href="#!">Главная</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="about" smooth={true} duration={1000}>
+                    <a href="#!">О компании</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="services" smooth={true} duration={1000}>
+                    <a href="#!">Услуги</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="projects" smooth={true} duration={1000}>
+                    <a href="#!">Проекты</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="reviews" smooth={true} duration={1000}>
+                    <a href="#!">Отзывы</a>
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+            <SubMenu />
+            <a href="#!" className="callbtn">
+              <img src={callbtn} alt="callBtn" />
+            </a>
           </div>
         </div>
         <h1>агентство недвижимости</h1>
@@ -436,7 +433,7 @@ function App() {
               арендную недвижимость, а также поддержку покупки первого дома.
             </p>
           </div>
-          <div className="container">
+          <div className="container slide-hidden">
             <SlideToPercent />
           </div>
         </div>

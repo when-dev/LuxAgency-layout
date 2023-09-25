@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import burgerBar from "../../assets/image/icons/burger-bar.png";
+import { Link } from "react-scroll";
 
 function SubMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,19 +15,24 @@ function SubMenu() {
       <nav className={isOpen ? "" : "hidden"}>
         <ul>
           <li>
-            <a href="#main">Главная</a>
+            <Link  to="home" smooth={true} duration={1000}>
+              <a href="#home">Главная</a>
+            </Link>
           </li>
           <li>
-            <a href="#about">О компании</a>
+            <Link  to="about" smooth={true} duration={1000}>
+              <a href="#about">О компании</a>
+            </Link>
           </li>
           <li>
-            <a href="#services">Услуги</a>
+            <Link  to="projects" smooth={true} duration={1000}>
+              <a href="#projects">Проекты</a>
+            </Link>
           </li>
           <li>
-            <a href="#projects">Проекты</a>
-          </li>
-          <li>
-            <a href="#reviews">Отзывы</a>
+            <Link  to="reviews" smooth={true} duration={1000}>
+              <a href="#reviews">Отзывы</a>
+            </Link>
           </li>
         </ul>
       </nav>
