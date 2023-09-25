@@ -55,6 +55,14 @@ const SliderCalc = () => {
     { text: "Заемные средства⠀⠀⠀" },
   ];
 
+  const handleOrderConsultation = () => {
+    if (selectedImage) {
+      console.log("Заказ консультации выполнен!");
+    } else {
+      console.log("Выберите тип недвижимости перед заказом консультации.");
+    }
+  };
+
   return (
     <div className="slider-container">
       <div className="sliders">
@@ -118,14 +126,16 @@ const SliderCalc = () => {
             <div className="border">
               <p>
                 Итого Прибыль <br />
-                <span>
-                  {totalValue.toLocaleString("ru-RU")} 
-                  ₽
-                </span>
+                <span>{totalValue.toLocaleString("ru-RU")}₽</span>
               </p>
             </div>
           </div>
-          <button>Заказать Консультацию</button>
+          <button
+            onClick={handleOrderConsultation}
+            disabled={!selectedImage || slider.some((value) => value === 0)}
+          >
+            Заказать Консультацию
+          </button>
         </div>
       </div>
     </div>
