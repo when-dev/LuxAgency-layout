@@ -1,8 +1,10 @@
+import React, { useState } from "react";
 import SliderCalc from "./components/sliderCalc/SliderCalc.jsx";
 import Slider from "./components/slider/Slider.jsx";
 import PhoneNumberInput from "./components/phoneInput/PhoneNumberInput.jsx";
 import SlideToPercent from "./components/slideToPercent/SlideToPercent.jsx";
 import SubMenu from "./components/submenu/SubMenu.jsx";
+import ModalComponent from "./components/modal/Modal.jsx";
 
 import {
   // OUR_TEAM IMAGES
@@ -55,8 +57,21 @@ import "./assets/css/style.css";
 import "./assets/css/mediaRequest.css";
 
 import { Link } from "react-scroll";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="App">
       <header id="home" className="header">
@@ -93,7 +108,7 @@ function App() {
               </ul>
             </nav>
             <SubMenu />
-            <a href="#!" className="callbtn">
+            <a href="#!" className="callbtn" onClick={openModal}>
               <img src={callbtn} alt="callBtn" />
             </a>
           </div>
@@ -101,9 +116,13 @@ function App() {
         <h1>агентство недвижимости</h1>
         <h2>Лучшие идеи – Лучшее решение – Лучший результат</h2>
         <div className="center-content">
-          <button className="order-btn">заказать консультацию</button>
+          <button className="order-btn" onClick={openModal}>
+            заказать консультацию
+          </button>
         </div>
       </header>
+
+      <ModalComponent isOpen={isModalOpen} onClose={closeModal} />
 
       <section className="our_team">
         <div className="team__container">
@@ -317,7 +336,7 @@ function App() {
                 <p>Комплексное юридическое сопровождение</p>
               </div>
 
-              <button>Выбрать</button>
+              <button onClick={openModal}>Выбрать</button>
             </div>
             <div className="rates__inner-bg inner-two">
               <div className="rates__level level-two">
@@ -332,7 +351,7 @@ function App() {
                 <p>Комплексное юридическое сопровождение</p>
               </div>
 
-              <button>Выбрать</button>
+              <button onClick={openModal}>Выбрать</button>
             </div>
             <div className="rates__inner-bg inner-three">
               <div className="rates__level level-three">
@@ -347,7 +366,7 @@ function App() {
                 <p>Комплексное юридическое сопровождение</p>
               </div>
 
-              <button>Выбрать</button>
+              <button onClick={openModal}>Выбрать</button>
             </div>
           </div>
         </div>
@@ -382,6 +401,7 @@ function App() {
         </div>
         <div className="container slide-pos">
           <SliderCalc />
+          <ToastContainer />
         </div>
         <div className="diamond-pattern">
           <img src={diamondBg} alt="diamond" />
@@ -531,19 +551,29 @@ function App() {
           <div className="footer__down-content">
             <ul>
               <li>
-                <a href="#!">Главная</a>
+                <Link  to="home" smooth={true} duration={1000}>
+                  <a href="#!">Главная</a>
+                </Link>
               </li>
               <li>
-                <a href="#!">О компании</a>
+                <Link  to="about" smooth={true} duration={1000}>
+                  <a href="#!">О компании</a>
+                </Link>
               </li>
               <li>
-                <a href="#!">Услуги</a>
+                <Link  to="services" smooth={true} duration={1000}>
+                  <a href="#!">Услуги</a>
+                </Link>
               </li>
               <li>
-                <a href="#!">Проекты</a>
+                <Link  to="projects" smooth={true} duration={1000}>
+                  <a href="#!">Проекты</a>
+                </Link>
               </li>
               <li>
-                <a href="#!">Отзывы</a>
+                <Link  to="reviews" smooth={true} duration={1000}>
+                  <a href="#!">Отзывы</a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -5,10 +5,29 @@ import typeTwo from "../../assets/image/profitability-calc/type-2.png";
 import typeThree from "../../assets/image/profitability-calc/type-3.png";
 import typeFour from "../../assets/image/profitability-calc/type-4.png";
 import CustomSlider from "../customSlider/CustomSlider";
+import ModalComponent from "../modal/Modal";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "../modal/modal.css";
 
 const SliderCalc = () => {
   const [slider, setSlider] = useState([0, 0, 0]);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+
+  const handleOrderConsultation = () => {
+    if (selectedImage && !slider.some((value) => value === 0)) {
+      setIsModalOpen(true);
+    } else {
+      toast.error("Вы не использовали все поля", {
+        position: toast.POSITION.BOTTOM_CENTER,
+        style: {
+          backgroundColor: 'black', 
+        }
+      });
+    }
+  };
 
   const handleSliderChange = (index, value) => {
     const newValues = [...slider];
@@ -55,12 +74,8 @@ const SliderCalc = () => {
     { text: "Заемные средства⠀⠀⠀" },
   ];
 
-  const handleOrderConsultation = () => {
-    if (selectedImage) {
-      console.log("Заказ консультации выполнен!");
-    } else {
-      console.log("Выберите тип недвижимости перед заказом консультации.");
-    }
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -130,12 +145,10 @@ const SliderCalc = () => {
               </p>
             </div>
           </div>
-          <button
-            onClick={handleOrderConsultation}
-            disabled={!selectedImage || slider.some((value) => value === 0)}
-          >
+          <button onClick={handleOrderConsultation}>
             Заказать Консультацию
           </button>
+          <ModalComponent isOpen={isModalOpen} onClose={closeModal} />
         </div>
       </div>
     </div>

@@ -1,0 +1,83 @@
+.modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3); /* Задайте здесь желаемый цвет фона */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  border: 1px solid transparent;
+  background: linear-gradient(
+    270deg,
+    #b0772a 0%,
+    #deb864 16%,
+    #f4d780 25%,
+    #f4d780 46%,
+    #fbf9d8 65%,
+    #f4d780 75%,
+    #b0772a 100%
+  );
+  box-shadow: inset 0px 0px 0px 100vw #090909;
+  border-radius: 10px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.modal-content h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.modal-content label {
+  display: block;
+  font-weight: bold;
+}
+
+.modal-content input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.modal-content button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: black;
+  width: 100%;
+  padding: 15px 70px;
+  border: transparent;
+  margin: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(
+    20.79deg,
+    #f6e188 -22.06%,
+    #a56a28 15.96%,
+    #e2ac54 40.29%,
+    #f2da82 69.17%,
+    #bb772c 96.54%,
+    #eda948 130%
+  );
+}
+
+.phone-input-modal[type="tel"],
+.modal-content input[type="text"] {
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+  color: black;
+  padding-left: 20px;
+  font-size: 16px;
+}
