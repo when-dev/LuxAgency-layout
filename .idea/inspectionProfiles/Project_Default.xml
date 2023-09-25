@@ -1,0 +1,84 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DotEnvLowercaseKeyInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="JsonSchemaCompliance" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyArgumentListInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyDeprecationInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyGlobalUndefinedInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyInterpreterInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyMethodParametersInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="3">
+            <item index="0" class="java.lang.String" itemvalue="pandas" />
+            <item index="1" class="java.lang.String" itemvalue="numpy" />
+            <item index="2" class="java.lang.String" itemvalue="telebot" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+          <option value="W292" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N801" />
+          <option value="N803" />
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPropertyDefinitionInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyProtectedMemberInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyRedeclarationInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredNames">
+        <list>
+          <option value="id" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnboundLocalVariableInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="app.router.accountRouter.models" />
+          <option value="telebot.TeleBot.message_handler" />
+          <option value="telebot.TeleBot.*" />
+          <option value="app.bot.TelegramBot.customExceptions" />
+          <option value="customExceptions" />
+          <option value="app.bot.TelegramBot.TelegramBot.instance" />
+          <option value="app.userAgentBot.UserAgent.GeniusAPI.*" />
+          <option value="app.redisWrapper.redisInstance.instance" />
+          <option value="binance.spot.Spot.trades" />
+          <option value="binance.spot.Spot.time" />
+          <option value="App.MediaUploader.MediaUploader.service_types" />
+          <option value="binance.spot.Spot.rolling_window_ticker" />
+          <option value="datetime.datetime.datetime" />
+          <option value="object.chat" />
+          <option value="app.mainHandler.TelegramBotApplication.chat" />
+          <option value="app.Bot.TelegramBotApplication.TelegramBotApplication.chat" />
+          <option value="app.Markups.MarkupBuilder.MarkupBuilder._hide_menu" />
+          <option value="vk_api.VkApiMethod" />
+          <option value="App.Bot.Markups.MarkupBuilder.MarkupBuilder._sendRemoveAdvChatText" />
+          <option value="App.Bot.Markups.MarkupBuilder.MarkupBuilder._adv_chat_removed" />
+          <option value="App.Bot.Markups.MarkupBuilder.MarkupBuilder._target_edited" />
+          <option value="App.Bot.Markups.MarkupBuilder.MarkupBuilder._sendReloadChatGPTMessageText" />
+          <option value="App.Bot.Markups.MarkupBuilder.MarkupBuilder._ReloadedChatGPTMessageText" />
+          <option value="App.Bot.Markups.MarkupBuilder.MarkupBuilder._sendDeleteAccountText" />
+          <option value="App.Bot.Markups.MarkupBuilder.MarkupBuilder._account_deleted" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
