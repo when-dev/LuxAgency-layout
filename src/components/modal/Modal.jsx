@@ -35,6 +35,12 @@ const ModalComponent = ({ isOpen, onClose }) => {
           />
         </div>
         <button className="submit-btn">Отправить</button>
+        <div>
+          <p className="modal-telegram">Или свяжитесь с нами в Telegram:</p>
+          <a href="#!" target="_blank" rel="noopener noreferrer">
+            <button className="telegram-btn">Перейти в Telegram</button>
+          </a>
+        </div>
       </div>
     </div>
   ) : null;
