@@ -1033,7 +1033,7 @@ p {
 /* SECTION CONSULTATION */
 
 .consultation-section {
-  z-index: 1;
+  z-index: 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -1102,7 +1102,7 @@ p {
 
 .our-projects {
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .projects__container {
