@@ -4,6 +4,12 @@
   justify-content: center;
 }
 
+.slider-inf {
+  min-width: 670px;
+  margin-bottom: 0;
+  margin-left: 70px;
+}
+
 .slider-row img {
     display: flex;
     gap: 20px;
@@ -14,22 +20,23 @@
 
 .slider-row h3 {
   text-transform: uppercase;
-  margin-left: 90px;
-  margin-top: 20px;
+  margin-top: 40px;
   font-family: "Roboto", sans-serif;
   font-size: 23px;
   font-weight: 700;
   line-height: 26.95px;
 }
 
-.slider-row ul li {
+.slider-row li {
   font-family: "Heebo", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 29.38px;
   color: #c0c0c0;
   position: relative;
-  margin: 20px 0px 15px 180px;
+  margin: 20px 0px 15px 0;
+  max-width: 565px;
+  padding-left: 100px;
 }
 
 .slider-row ul li::after {
@@ -41,6 +48,7 @@
   right: 0;
   background-image: url("../../assets/image/our_services/dot.png");
   background-repeat: no-repeat;
+  margin-left: 100px;
 }
 
 .slider-controls > img {
