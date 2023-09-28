@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Loader from "./components/loader/Loader.jsx";
 import SliderCalc from "./components/sliderCalc/SliderCalc.jsx";
 import Slider from "./components/slider/Slider.jsx";
 import PhoneNumberInput from "./components/phoneInput/PhoneNumberInput.jsx";
@@ -51,7 +52,6 @@ import rectSmall from "./assets/image/icons/bg-react-small.png";
 import rectNormal from "./assets/image/icons/bg-rect.png";
 import thinkingMan from "./assets/image/about/thinking-man.png";
 import bgSquare from "./assets/image/icons/bg-border-square.png";
-import logo from "./assets/image/logo.svg";
 import callbtn from "./assets/image/call.svg";
 import "./assets/css/style.css";
 import "./assets/css/mediaRequest.css";
@@ -60,9 +60,9 @@ import { Link } from "react-scroll";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -72,12 +72,32 @@ function App() {
     setIsModalOpen(false);
   };
 
+  useEffect(() => {
+
+    const wasLoaded = localStorage.getItem("wasLoaded");
+    if (wasLoaded) {
+      setLoading(false);
+    } else {
+      const timeout = setTimeout(() => {
+        setLoading(false);
+        localStorage.setItem("wasLoaded", "true");
+      }, 3000); 
+
+      return () => clearTimeout(timeout);
+    }
+  }, []);
+
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <div className="App">
       <header id="home" className="header">
         <div className="header__inner">
           <div className="container header__container">
-            <img className="logo" src={logo} alt="logo" />
+            <div className="logo">NewLuxe</div>
             <nav className="header__nav">
               <ul>
                 <li>
@@ -531,7 +551,7 @@ function App() {
       <footer className="footer">
         <div className="footer__container">
           <div className="footer__up-content">
-            <img src={logo} alt="logo" />
+            <div className="logo">NewLuxe</div>
             <h2>
               Преврати мечту в <span>реальность</span>
             </h2>
@@ -551,27 +571,27 @@ function App() {
           <div className="footer__down-content">
             <ul>
               <li>
-                <Link  to="home" smooth={true} duration={1000}>
+                <Link to="home" smooth={true} duration={1000}>
                   <a href="#!">Главная</a>
                 </Link>
               </li>
               <li>
-                <Link  to="about" smooth={true} duration={1000}>
+                <Link to="about" smooth={true} duration={1000}>
                   <a href="#!">О компании</a>
                 </Link>
               </li>
               <li>
-                <Link  to="services" smooth={true} duration={1000}>
+                <Link to="services" smooth={true} duration={1000}>
                   <a href="#!">Услуги</a>
                 </Link>
               </li>
               <li>
-                <Link  to="projects" smooth={true} duration={1000}>
+                <Link to="projects" smooth={true} duration={1000}>
                   <a href="#!">Проекты</a>
                 </Link>
               </li>
               <li>
-                <Link  to="reviews" smooth={true} duration={1000}>
+                <Link to="reviews" smooth={true} duration={1000}>
                   <a href="#!">Отзывы</a>
                 </Link>
               </li>

@@ -1,0 +1,45 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    20.79deg,
+    #f6e188 -22.06%,
+    #a56a28 15.96%,
+    #e2ac54 40.29%,
+    #f2da82 69.17%,
+    #bb772c 96.54%,
+    #eda948 130%
+  );
+  box-shadow: inset 0px 0px 0px 100vw #090909;
+}
+
+.loader {
+  border: 10px solid transparent; 
+  border-top: 10px solid transparent; 
+  border-bottom: 10px solid transparent; 
+  border-left: 10px solid #f6e188; 
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: spin 2s linear infinite; 
+}
+
+.loader-text {
+  font-family: "Roboto", sans-serif;
+  color: #fff; 
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 30px; 
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

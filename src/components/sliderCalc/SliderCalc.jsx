@@ -15,23 +15,24 @@ const SliderCalc = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-
   const handleOrderConsultation = () => {
     if (selectedImage && !slider.some((value) => value === 0)) {
       setIsModalOpen(true);
     } else {
-      toast.error("Вы не использовали все поля", {
+      toast.warn("Нужно выбрать все поля", {
+        theme: "dark",
         position: toast.POSITION.BOTTOM_CENTER,
-        style: {
-          backgroundColor: 'black', 
-        }
       });
     }
   };
 
   const handleSliderChange = (index, value) => {
     const newValues = [...slider];
-    newValues[index] = value;
+    if (index === 1) {
+      newValues[index] = Math.max(value, 0);
+    } else {
+      newValues[index] = value;
+    }
     setSlider(newValues);
   };
 
@@ -57,10 +58,21 @@ const SliderCalc = () => {
     }
   };
 
-  const totalValue = slider.reduce(
-    (acc, currentValue) => acc + currentValue,
-    0
-  );
+  const calculateProfit = () => {
+    const [rent, expenses, loans] = slider;
+    const propertyTypeMultipliers = {
+      typeOne: 1.2, // апартаменты
+      typeTwo: 1.5, // бизнес центр
+      typeThree: 1.7, // торговый центр
+      typeFour: 2.0, // бизнес парк
+    };
+
+    const propertyMultiplier = propertyTypeMultipliers[selectedImage] || 1;
+
+    const baseProfit = (rent * 100 - expenses) * propertyMultiplier;
+    const totalValue = (baseProfit + loans);
+    return totalValue;
+  };
 
   const minMaxValues = [
     { min: 0, max: 500000 },
@@ -141,7 +153,7 @@ const SliderCalc = () => {
             <div className="border">
               <p>
                 Итого Прибыль <br />
-                <span>{totalValue.toLocaleString("ru-RU")}₽</span>
+                <span>{calculateProfit().toLocaleString("ru-RU")}₽</span>
               </p>
             </div>
           </div>

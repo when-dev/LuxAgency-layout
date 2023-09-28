@@ -25,7 +25,7 @@ import arrowLeft from './our_services/btn-arrow-left.png';
 import arrowRight from './our_services/btn-arrow-right.png';
 import firstServicesPic from './our_services/picture-1.png';
 import secondServicesPic from './our_services/picture-2.png';
-import thirdServicesPic from './our_services/picture-3.png';
+import thirdServicesPic from './our_services/picture-3.jpg';
 
 // IMPORT OUR-REVIEWS IMAGES
 import firstPic from './our-reviews/pic-1.png'; 

@@ -37,7 +37,6 @@
   gap: 160px;
 }
 
-
 .header__inner {
   position: fixed;
   height: 105px;
@@ -64,9 +63,11 @@ nav.header__nav ul li a {
   color: white;
 }
 
-.header__inner .logo img {
-  padding: 40px 30px 40px 30px;
-  width: 200px;
+.logo {
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 44.85px;
 }
 
 .callbtn img {
@@ -120,6 +121,19 @@ h2,
     #f2da82 69.17%,
     #bb772c 96.54%,
     #eda948 130%
+  );
+  transition: background 1s;
+}
+
+.order-btn:hover {
+  background: linear-gradient(
+    20.79deg,
+    #eda948 -22.06%,
+    /* Меняем цвета местами */ #bb772c 15.96%,
+    #f2da82 40.29%,
+    #e2ac54 69.17%,
+    #a56a28 96.54%,
+    #f6e188 130%
   );
 }
 
@@ -663,6 +677,21 @@ p {
       rgba(255, 255, 255, 0.2) 100%,
       rgba(255, 255, 255, 0) 57.02%
     );
+  background-size: 200% 100%;
+  transition: background 0.3s;
+}
+
+.inner-one button:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 107, 0, 0.32),
+      rgba(255, 107, 0, 0.32)
+    ),
+    linear-gradient(
+      143.15deg,
+      rgba(255, 255, 255, 0) 100%,
+      rgba(255, 255, 255, 0.2) 57.02%
+    );
 }
 
 .inner-two button {
@@ -680,6 +709,25 @@ p {
     #909192 64.13%,
     #767c7d 73.39%,
     #576265 82.64%
+  );
+  transition: background 0.3s;
+}
+
+.inner-two button:hover {
+  background: linear-gradient(
+    38.59deg,
+    #576265 82.64%,
+    #767c7d 73.39%,
+    #909192 64.13%,
+    #999999 57.96%,
+    #818586 44.08%,
+    #576265 22.49%,
+    #5a6568 14.77%,
+    #656e71 7.06%,
+    #777e80 -0.65%,
+    #848a8b -3.74%,
+    #b3b3b3 -26.87%,
+    #576265 -70.06%
   );
 }
 
@@ -699,6 +747,19 @@ p {
     #f2da82 52.71%,
     #bb772c 75.39%,
     #eda948 103.11%
+  );
+  transition: background 0.3s, color 0.3s;
+}
+
+.inner-three button:hover {
+  background: linear-gradient(
+    12.08deg,
+    #eda948 -22.89%,
+    #bb772c 8.61%,
+    #f2da82 28.77%,
+    #e2ac54 52.71%,
+    #a56a28 75.39%,
+    #f6e188 103.11%
   );
 }
 
@@ -1360,19 +1421,14 @@ p {
   justify-content: center;
 }
 
-.sub-menu li  {
+.sub-menu li {
   width: 100%;
   border-bottom: 3px solid white;
   padding-bottom: 10px;
-
 }
 
 .hidden {
   display: none;
 }
 
-
-
-
 /* MODAL WINDOW */
-

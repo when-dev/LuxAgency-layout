@@ -198,12 +198,30 @@
   font-weight: 900;
   line-height: 24.97px;
   margin-bottom: 50px;
+
+  transition: background 0.3s;
+}
+
+.slider-content__right button:hover {
+  background: linear-gradient(
+    20.79deg,
+    #eda948 -22.06%,
+    #bb772c 15.96%,
+    #f2da82 40.29%,
+    #e2ac54 69.17%,
+    #a56a28 96.54%,
+    #f6e188 130%
+  );
 }
 
 .slider__general-container {
   display: flex;
   justify-content: space-between; 
   align-items: flex-start;
+}
+
+.custom-toast {
+  color: greenyellow !important;
 }
 
 @media (max-width: 1300px) {
@@ -237,4 +255,11 @@
   .slider-content__right {
     margin-top: 20px;
   }
+}
+
+@media (max-width: 986px) {
+  .border p > span {
+    font-size: 20px;
+  }
+  
 }
