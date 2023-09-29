@@ -59,7 +59,7 @@ const SliderCalc = () => {
   };
 
   const calculateProfit = () => {
-    const [rent, expenses, loans] = slider;
+    const [rent, expenses] = slider;
     const propertyTypeMultipliers = {
       typeOne: 1.2, // апартаменты
       typeTwo: 1.5, // бизнес центр
@@ -69,8 +69,7 @@ const SliderCalc = () => {
 
     const propertyMultiplier = propertyTypeMultipliers[selectedImage] || 1;
 
-    const baseProfit = (rent * 100 - expenses) * propertyMultiplier;
-    const totalValue = (baseProfit + loans);
+    const totalValue = (rent * 100 - expenses) * propertyMultiplier;
     return totalValue;
   };
 

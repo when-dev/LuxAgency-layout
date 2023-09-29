@@ -131,11 +131,17 @@
       #b0772a 97.12%
     );
     padding: 10px;
-    margin-bottom: 40px;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
+
+  .job-title {
+    margin-bottom: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
 
   .about-company {
     padding: 40px 0 80px 0;
@@ -545,11 +551,17 @@
       #b0772a 97.12%
     );
     padding: 10px;
-    margin-bottom: 40px;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
+
+  .job-title {
+    margin-bottom: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
 
   .about-company {
     padding: 40px 0 80px 0;
@@ -746,7 +758,11 @@
     font-size: 20px;
   }
 
-
+  .job-title {
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 700;
+}
 
   .header h2 {
     font-size: 16px;

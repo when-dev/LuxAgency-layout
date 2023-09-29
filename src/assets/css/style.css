@@ -68,7 +68,7 @@ nav.header__nav ul li a {
   font-size: 30px;
   font-weight: 700;
   line-height: 44.85px;
-}
+}у
 
 .callbtn img {
   cursor: pointer;
@@ -213,11 +213,25 @@ section.our_team {
     #b0772a 97.12%
   );
   padding: 10px;
-  margin-bottom: 40px;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
+
+.callbtn img{
+  margin-right: 10px;
+  max-width: 175px;
+  min-height: 45px;
+}
+
+
+.job-title {
+    margin-bottom: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
 
 /* SECTION ABOUT_COMPANY */
 

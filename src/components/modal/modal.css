@@ -30,6 +30,29 @@
   border-radius: 10px;
 }
 
+
+.modal-content .submit-btn:hover {
+  background: linear-gradient(
+    20.79deg,
+    #eda948 -22.06%,
+    #bb772c 15.96%,
+    #f2da82 40.29%,
+    #e2ac54 69.17%,
+    #a56a28 96.54%,
+    #f6e188 130%
+  );
+}
+.modal-content .telegram-btn:hover {
+  background: linear-gradient(
+    20.79deg,
+    #eda948 -22.06%,
+    #bb772c 15.96%,
+    #f2da82 40.29%,
+    #e2ac54 69.17%,
+    #a56a28 96.54%,
+    #f6e188 130%
+  );
+}
 .modal-content h2 {
   text-transform: uppercase;
   font-size: 20px;

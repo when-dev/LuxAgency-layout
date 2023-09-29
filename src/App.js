@@ -73,7 +73,6 @@ function App() {
   };
 
   useEffect(() => {
-
     const wasLoaded = localStorage.getItem("wasLoaded");
     if (wasLoaded) {
       setLoading(false);
@@ -81,12 +80,11 @@ function App() {
       const timeout = setTimeout(() => {
         setLoading(false);
         localStorage.setItem("wasLoaded", "true");
-      }, 3000); 
+      }, 3000);
 
       return () => clearTimeout(timeout);
     }
   }, []);
-
 
   if (loading) {
     return <Loader />;
@@ -162,50 +160,69 @@ function App() {
             <div className="team-member">
               <img src={maxWiwi} alt="maxWiwi" />
               <p className="team-member-name">Max Wiwi</p>
+              <p className="job-title">Президент студии</p>
             </div>
             <div className="team-member">
               <img src={wellSofi} alt="wellSofi" />
               <p className="team-member-name">Well Sofi</p>
+              <p className="job-title">Первая Леди</p>
             </div>
             <div className="team-member">
               <img src={ruslan} alt="ruslan" />
               <p className="team-member-name">Руслан</p>
+              <p className="job-title">Куратор проектов</p>
             </div>
             <div className="team-member">
               <img src={anna} alt="anna" />
               <p className="team-member-name">Анна</p>
+              <p className="job-title">Менеджер проектов</p>
             </div>
             <div className="team-member">
               <img src={igorek} alt="igorek" />
               <p className="team-member-name">Игорёк</p>
+              <p className="job-title">Team Leader</p>
             </div>
             <div className="team-member">
               <img src={antosha} alt="antosha" />
               <p className="team-member-name">Антоша</p>
+              <p className="job-title">Ведущий программист</p>
+
             </div>
             <div className="team-member">
               <img src={vitaminka} alt="Витаминка" />
               <p className="team-member-name">Витаминка</p>
+              <p className="job-title">Senior</p>
+
             </div>
             <div className="team-member">
               <img src={muslim} alt="Муслим" />
               <p className="team-member-name">Муслим</p>
+              <p className="job-title">Контент мендежер</p>
+
             </div>
             <div className="team-member">
               <img src={antonodzhi} alt="Антоноджи" />
               <p className="team-member-name">Антоноджи</p>
+              <p className="job-title">Маркетолог</p>
+
             </div>
             <div className="team-member">
               <img src={vladik} alt="Владик" />
               <p className="team-member-name">Владик</p>
+              <p className="job-title">Middle программист</p>
+
             </div>
             <div className="team-member">
               <img src={andrusha} alt="Андрюша" />
               <p className="team-member-name">Андрюша</p>
+              <p className="job-title">Junior программист</p>
+
             </div>
             <div className="team-member">
               <img src={platina} alt="Платина" />
               <p className="team-member-name">Платина</p>
+              <p className="job-title">Отдел тестирования</p>
+
             </div>
           </div>
         </div>
